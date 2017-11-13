@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  BHSJ
+//
+//  Created by linjianguo on 2017/10/13.
+//  Copyright © 2017年 zhangyafeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "diffrentArrManager.h"
+
+#ifdef PRINTLOG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#endif /* PrefixHeader_pch */
